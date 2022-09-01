@@ -1,0 +1,217 @@
+*{
+	box-sizing: border-box;
+	font-family: 'Roboto', sans-serif;}
+
+h1{font-size: 3.5em;}
+h2{font-size: 2.7em; text-align: center;}
+h3{font-size: 2em;}
+p{font-size: 1.25em;}
+ul{list-style: none;}
+
+button{
+	font-size: 1.25em;
+	font-weight: bold;
+	border-radius: 5px;
+	border: 2px solid rgba(0, 0, 0, 0.3);
+	box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+	color: white;
+	background-color: blueviolet;
+	align-items: center;
+    &:hover{ 
+        background-color: rgb(104, 32, 172);}}
+
+.container{
+	max-width: 1400px;
+	margin: auto;}
+
+.color-acento{color: blueviolet; }
+
+header{
+	background-color: rgb(230, 230, 230);
+    .logo{
+	    margin: 0;
+	    padding: 25px 30px;
+	    font-weight: bold;
+	    color: blueviolet;
+	    font-size: 1.6em;}
+    .container{
+	    display: flex;
+	    flex-direction: row;
+	    justify-content: space-between;}
+    nav{
+	    display: flex;
+	    flex-direction: row;
+	    text-align: center;
+	    padding-bottom: 10px;}
+    a{
+	    padding: 30px 30px;
+	    text-decoration: none;
+	    font-weight: bold;
+	    color: black;
+	    font-size: 20px;
+        &:hover{
+	        color: blueviolet;}}}
+
+.hero{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	flex-direction: column;
+	height: 30vh;
+	color: white;
+	background-image: linear-gradient(
+		0deg,
+		rgba(0, 0, 0, 0.5),
+		rgba(0, 0, 0, 0.5)
+	)
+	,url(fondo.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+    h1{
+        color: white;}}
+
+        #quienes-somos .container{
+            text-align: center;
+            padding: 80px 12px;
+        }
+        
+        #nuestros-productos{
+            color: blueviolet;
+        }
+        
+        .ropa{
+            height: 300px;
+            background-color: rgb(230, 230, 230);
+            margin: 5px;
+        }
+         
+        #camisa{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            flex-direction: column;
+            color: white;
+            background-image: linear-gradient(
+                0deg,
+                rgba(0, 0, 0, 0.5),
+                rgba(0, 0, 0, 0.5)
+            )
+            ,url(camisas.jpg.crdownload);
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        
+        #remera{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            flex-direction: column;
+            color: white;
+            background-image: linear-gradient(
+                0deg,
+                rgba(0, 0, 0, 0.5),
+                rgba(0, 0, 0, 0.5)
+            )
+            ,url(remera.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        
+        #pantalon{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            flex-direction: column;
+            color: white;
+            background-image: linear-gradient(
+                0deg,
+                rgba(0, 0, 0, 0.5),
+                rgba(0, 0, 0, 0.5)
+            )
+            ,url(pantalones.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        
+        #zapato{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            flex-direction: column;
+            color: white;
+            background-image: linear-gradient(
+                0deg,
+                rgba(0, 0, 0, 0.5),
+                rgba(0, 0, 0, 0.5)
+            )
+            ,url(zapatos.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        
+        .grid{
+            display: grid;
+            grid-template-columns: 50% 50%;}
+        
+        footer{
+            background-color: rgb(230, 230, 230);
+            margin-top: 5px;
+            p{
+                margin: 0px;
+                padding: 10px;
+                color: rgb(100, 100, 100);}
+            .container{
+                display: flex;
+                justify-content: right;
+                align-items: flex-end;}}
+        
+        @media (min-width: 720px){
+            header{
+                position: fixed;
+                width: 100%;
+                .container{
+                    flex-direction: row;
+                    justify-content: space-between;}
+                nav{
+                    flex-direction: row;
+                    padding-bottom: 0;
+                    padding-right: 20px;}
+        
+            .hero h1{
+                font-size: 5em;
+                padding-top: 70px;}
+        
+            #quienes-somos{ 
+                .container{
+                    display: flex;
+                    justify-content: center;}
+                .texto{
+                    width: 50%;
+                    text-align: initial;
+                    max-width: 800px;
+                    padding: 0px 30px;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    padding-left: 100px;}
+                h2{
+                    margin-top: 0;
+                    text-align: center;}
+                p{
+                    text-align: center;}
+                .img-container{
+                    background-image: linear-gradient(
+                    0deg,
+                    rgba(0, 0, 0, 0.5),
+                    rgba(0, 0, 0, 0.5))
+                    ,url(ropa.jpg);
+                    background-size: cover;
+                    background-position: center center;
+                    height: 500px;
+                    width: 400px;}
+                }}}
